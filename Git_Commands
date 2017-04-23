@@ -1,0 +1,44 @@
+
+
+FORK is in the CLOUD
+CLONE is on my LOCAL
+
+
+Set up Git on your terminal:
+    git config --global user.email "cefan_2000@yahoo.com"
+    git config --global user.name "cefan-2000"
+
+FORK the repo so that you have your own copy in the CLOUD:
+    Login to GitHub:  https://github.com/ga-students/DS-SF-34
+    Click on FORK button on top right
+    My fork is called https://github.com/cefan-2000/DS-SF-34
+
+CLONE my fork onto my LOCAL computer
+    git clone https://github.com/cefan-2000/DS-SF-34
+
+SET original repo as the UPSTREAM
+    cd DS-SF-34
+    git remote add upstream https://github.com/ga-students/DS-SF-34
+
+
+WHEN COURSE REPO HAS CHANGED, update your FORK and CLONE
+    git fetch upstream
+    git merge --no-commit upstream/master
+    git commit -m "Merged commits from ga-students/DS-SF-34 for an up to date FORK"
+
+    <this pushes it down to local repo>
+    git push
+
+WHEN YOU HAVE CHANGED WORK on Local Repo, update the FORK (not the UPSTREAM)
+    cd DS-SF-34
+    <make a copy with your name on it so people who whose it is>
+    cp unit-project/1/notebooks/unit-project-1-starter-code.ipynb unit-project/1/notebooks/unit-project-1-starter-code-cefan-2000.ipynb
+    <modify and save the notebook>
+    git add unit-project/1/notebooks/unit-project-1-starter-code-cefan-2000.ipynb
+    <repeat git add after every modification>
+    git commit -m "Carol Fan Unit 1 Project submission Apr 22"
+    git push
+
+DID IT ALL WORK?
+    git status
+    
