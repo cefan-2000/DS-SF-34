@@ -35,10 +35,19 @@ WHEN YOU HAVE CHANGED WORK on Local Repo, update the FORK (not the UPSTREAM)
     cp unit-project/1/notebooks/unit-project-1-starter-code.ipynb unit-project/1/notebooks/unit-project-1-starter-code-cefan-2000.ipynb
     <modify and save the notebook>
     git add unit-project/1/notebooks/unit-project-1-starter-code-cefan-2000.ipynb
+
+    < to add all files>
+    git add -u 
+
     <repeat git add after every modification>
     git commit -m "Carol Fan Unit 1 Project submission Apr 22"
     git push
 
 DID IT ALL WORK?
     git status
-    
+
+
+IF YOU PUT TOO MUCH UP IN GIT:
+    delete files on computer
+    git commit
+    git push
